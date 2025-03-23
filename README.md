@@ -142,8 +142,6 @@ Caso o arquivo não esteja sendo atualizado, verifique as permissões:
 sudo chmod 644 /var/log/logserver.log
 ```
 
----
-
 ## **Contribuição**  
 
 Se deseja contribuir para o projeto, faça um **fork** do repositório e envie **pull requests**. Certifique-se de seguir boas práticas de codificação.  
@@ -153,6 +151,3 @@ Se deseja contribuir para o projeto, faça um **fork** do repositório e envie *
 ## **Licença**  
 
 Este projeto está licenciado sob a **Licença MIT**.  
-
----
-
