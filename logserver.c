@@ -142,7 +142,7 @@ void start_server() {
     memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = INADDR_ANY; // Aceita qualquer IP
-    server_addr.sin_port = htons(PORT);       // Porta 5014
+    server_addr.sin_port = htons(PORT);       // Porta 514
 
     // Faz o bind do socket à porta
     if (bind(sockfd, (const struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
