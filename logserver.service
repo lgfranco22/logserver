@@ -1,0 +1,29 @@
+[Unit]
+Description=Servidor de Log UDP
+After=network.target
+
+[Service]
+# Caminho para o executável do logserver, com o parâmetro 'start' para iniciar o serviço
+ExecStart=/usr/local/bin/logserver start
+
+# Caminho para o comando que deve ser executado para parar o logserver
+ExecStop=/usr/local/bin/logserver stop
+
+# Definir que o serviço deve ser reiniciado automaticamente se ele falhar
+Restart=always
+
+# Usuário sob o qual o serviço será executado (pode ser 'nobody' ou outro usuário específico)
+User=nobody
+
+# Grupo sob o qual o serviço será executado (pode ser 'nogroup' ou outro grupo)
+Group=nogroup
+
+# Diretório onde o serviço será executado (onde o logserver está localizado)
+WorkingDirectory=/usr/local/bin/
+
+# Arquivo onde o PID do serviço será armazenado
+PIDFile=/var/run/logserver.pid
+
+[Install]
+# O serviço será iniciado quando o sistema atingir o nível de execução multi-usuário
+WantedBy=multi-user.target
