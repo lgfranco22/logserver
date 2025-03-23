@@ -100,4 +100,4 @@ Se você deseja contribuir para este projeto, fique à vontade para fazer um **f
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Licença MIT.
